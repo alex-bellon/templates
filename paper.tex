@@ -1,0 +1,131 @@
+\documentclass[11pt,conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+\usepackage{lstautogobble}  % Fix relative indenting
+\usepackage{color}          % Code coloring
+\usepackage{zi4}            % Nice font
+
+\definecolor{bluekeywords}{rgb}{0.13, 0.13, 1}
+\definecolor{greencomments}{rgb}{0, 0.5, 0}
+\definecolor{redstrings}{rgb}{0.9, 0, 0}
+\definecolor{graynumbers}{rgb}{0.5, 0.5, 0.5}
+
+\usepackage{listings}
+\lstset{
+    autogobble,
+    columns=fullflexible,
+    showspaces=false,
+    showtabs=false,
+    breaklines=true,
+    showstringspaces=false,
+    breakatwhitespace=true,
+    escapeinside={(*@}{@*)},
+    commentstyle=\color{greencomments},
+    keywordstyle=\color{bluekeywords},
+    stringstyle=\color{redstrings},
+    numberstyle=\color{graynumbers},
+    basicstyle=\ttfamily\scriptsize,
+    framesep=12pt,
+    xleftmargin=1pt,
+    tabsize=2,
+    captionpos=b
+}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\graphicspath{images/}
+
+\title{Title\\ {\Large Subtitle}}
+
+% (last name) alphabetical
+\author{
+    Name\\
+    \textit{UC San Diego}\\
+    name@ucsd.edu
+\and 
+    Name\\
+    \textit{UC San Diego}\\
+    name@ucsd.edu
+\and 
+    Name\\
+    \textit{UC San Diego}\\
+    name@ucsd.edu
+}
+
+\maketitle
+
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor nulla, lacinia sed fermentum ut, pharetra eu sem. Donec non mi et nulla tempus semper. Mauris nisi tortor, sollicitudin at leo rutrum, iaculis volutpat mi. Nunc eget tellus sit amet ante pellentesque placerat non sed arcu. In a gravida ipsum. Quisque viverra fermentum turpis, vitae feugiat sapien lobortis sed. Integer convallis convallis neque, eu interdum turpis sodales ut. Integer enim turpis, hendrerit nec consectetur a, tincidunt et dui. Ut elit leo, convallis et aliquet nec, lacinia vitae lorem. Nam pellentesque eleifend nisi sed egestas. Nulla ac risus ac purus faucibus ullamcorper quis quis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eros purus, pellentesque vitae nibh vel, egestas commodo augue. Praesent varius arcu lacinia neque porttitor, sit amet fermentum tortor auctor. Integer laoreet lectus vel nisi semper fringilla vel eget tellus. Pellentesque luctus quam sit amet laoreet posuere. 
+\end{abstract}
+
+\section{Introduction} \label{intro}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor nulla, lacinia sed fermentum ut, pharetra eu sem. Donec non mi et nulla tempus semper. Mauris nisi tortor, sollicitudin at leo rutrum, iaculis volutpat mi. Nunc eget tellus sit amet ante pellentesque placerat non sed arcu. In a gravida ipsum. Quisque viverra fermentum turpis, vitae feugiat sapien lobortis sed. Integer convallis convallis neque, eu interdum turpis sodales ut. Integer enim turpis, hendrerit nec consectetur a, tincidunt et dui. Ut elit leo, convallis et aliquet nec, lacinia vitae lorem. Nam pellentesque eleifend nisi sed egestas. Nulla ac risus ac purus faucibus ullamcorper quis quis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eros purus, pellentesque vitae nibh vel, egestas commodo augue. Praesent varius arcu lacinia neque porttitor, sit amet fermentum tortor auctor. Integer laoreet lectus vel nisi semper fringilla vel eget tellus. Pellentesque luctus quam sit amet laoreet posuere \cite{test}.
+
+%
+%\begin{figure}
+%    \centering
+%    \includegraphics[scale=0.35]{image.png}
+%    \caption{Caption}
+%    \label{fig:image}
+%\end{figure}
+
+\section{Background} \label{background}
+
+Donec posuere ante at nunc condimentum consequat. Donec vitae purus congue, volutpat nunc in, rutrum ex. Cras aliquam felis eu neque blandit porta. Nam eleifend dui tellus. Phasellus vitae eros quis ex ornare sodales ac non ipsum. Nam a aliquet libero. Integer nec consequat ex, ac tristique lorem. Donec nec eros elit. Morbi pellentesque fermentum ultrices. Mauris sed est eu arcu rhoncus blandit. 
+
+\subsection{Subsection}
+
+ Maecenas viverra augue non ex vehicula scelerisque. Nulla vel finibus felis. Etiam imperdiet erat in lectus faucibus, vitae lacinia magna eleifend. Sed scelerisque elit eu tincidunt elementum. Ut suscipit velit vel est rhoncus accumsan. Etiam vehicula egestas tincidunt. Aliquam suscipit nisl nec lectus viverra vestibulum. In laoreet mi at dignissim feugiat. Aliquam porta libero tristique nulla blandit vestibulum. Morbi aliquet enim ut lorem feugiat, a scelerisque ante facilisis. 
+
+\section{Related Work} \label{related}
+
+Vivamus sed malesuada eros. Integer tincidunt viverra felis pulvinar tincidunt. Aenean auctor tortor ac velit accumsan imperdiet. Sed egestas justo eu ornare fringilla. Mauris et augue ac nibh eleifend rhoncus vel ut sem. Integer vel ex eu augue auctor venenatis. Fusce sit amet tempus magna. Aliquam condimentum ullamcorper pulvinar. Nunc faucibus massa viverra ex lobortis, at vulputate ligula dictum. Donec luctus aliquam elit vel fermentum. Curabitur scelerisque orci eget dui vestibulum, auctor gravida odio porttitor. 
+
+\section{Methodology} \label{methodology}
+
+Donec tempor molestie dui, id venenatis nibh tristique nec. Vivamus semper porttitor est, quis consequat leo volutpat sit amet. Phasellus tempor interdum ex, ac pulvinar orci varius posuere. Integer pretium tincidunt tortor. Sed sed sapien vitae leo semper consectetur. Sed congue ex lacus, sit amet laoreet arcu sodales ac. Donec turpis erat, mollis quis condimentum quis, elementum vel turpis. Vestibulum a rhoncus tortor. Mauris laoreet lobortis lorem at dictum. Vivamus consectetur nisl vel enim ultricies, ut hendrerit nibh porttitor. Pellentesque vitae leo at mi lacinia pharetra sed nec elit. Pellentesque diam augue, faucibus nec arcu sed, blandit malesuada sem. Integer vel diam gravida, condimentum odio non, tempor metus. Sed et gravida enim. In fringilla lorem sit amet fermentum mollis. Etiam ut lorem rutrum, ultrices lectus eu, vestibulum purus. 
+
+\section{Analysis and Findings} \label{analysis}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor nulla, lacinia sed fermentum ut, pharetra eu sem. Donec non mi et nulla tempus semper. Mauris nisi tortor, sollicitudin at leo rutrum, iaculis volutpat mi. Nunc eget tellus sit amet ante pellentesque placerat non sed arcu. In a gravida ipsum. Quisque viverra fermentum turpis, vitae feugiat sapien lobortis sed. Integer convallis convallis neque, eu interdum turpis sodales ut. Integer enim turpis, hendrerit nec consectetur a, tincidunt et dui. Ut elit leo, convallis et aliquet nec, lacinia vitae lorem. Nam pellentesque eleifend nisi sed egestas. Nulla ac risus ac purus faucibus ullamcorper quis quis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eros purus, pellentesque vitae nibh vel, egestas commodo augue. Praesent varius arcu lacinia neque porttitor, sit amet fermentum tortor auctor. Integer laoreet lectus vel nisi semper fringilla vel eget tellus. Pellentesque luctus quam sit amet laoreet posuere. 
+
+\begin{lstlisting}[caption={operator.h; line 40-54},captionpos=b,language=C++]
+// Properties inform the operator-independent optimizer about 
+// legal transformations for nodes that have this operator.
+enum Property {
+  ...
+  kNoRead = 1 << 3,     // Has no scheduling dependency on Effects
+  kNoWrite = 1 << 4,    // Does not modify any Effects and 
+                // thereby create new scheduling dependencies.
+  ...
+  kFoldable = kNoRead | kNoWrite,
+  kEliminatable = kNoDeopt | kNoWrite | kNoThrow,
+  kKontrol = kNoDeopt | kFoldable | kNoThrow,
+  kPure = kKontrol | kIdempotent
+};
+\end{lstlisting}
+
+\section{Limitations and Future Work} \label{limitations}
+
+Donec posuere ante at nunc condimentum consequat. Donec vitae purus congue, volutpat nunc in, rutrum ex. Cras aliquam felis eu neque blandit porta. Nam eleifend dui tellus. Phasellus vitae eros quis ex ornare sodales ac non ipsum. Nam a aliquet libero. Integer nec consequat ex, ac tristique lorem. Donec nec eros elit. Morbi pellentesque fermentum ultrices. Mauris sed est eu arcu rhoncus blandit. 
+
+\section{Conclusion} \label{conclusion}
+
+Vivamus sed malesuada eros. Integer tincidunt viverra felis pulvinar tincidunt. Aenean auctor tortor ac velit accumsan imperdiet. Sed egestas justo eu ornare fringilla. Mauris et augue ac nibh eleifend rhoncus vel ut sem. Integer vel ex eu augue auctor venenatis. Fusce sit amet tempus magna. Aliquam condimentum ullamcorper pulvinar. Nunc faucibus massa viverra ex lobortis, at vulputate ligula dictum. Donec luctus aliquam elit vel fermentum. Curabitur scelerisque orci eget dui vestibulum, auctor gravida odio porttitor. 
+
+\section*{Acknowledgment}
+
+We thank everyone.
+
+\bibliographystyle{IEEEtran}
+\bibliography{paper}
+\end{document}
