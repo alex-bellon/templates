@@ -1,0 +1,10 @@
+#+LATEX_HEADER: \documentclass[11pt]{article}
+#+LATEX_HEADER: \usepackage[margin=.7in, top=1.2in]{geometry}
+#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \setlist{\setlength\itemsep{0em}\setlength\topsep{1em}}}
+
+\clearpage
+
+** title
+*** subtitle
+lorem ipsum
